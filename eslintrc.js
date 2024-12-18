@@ -18,4 +18,15 @@ export default [
   ...vueTsEslintConfig(),
   oxlint.configs['flat/recommended'],
   skipFormatting,
+  {
+    overrides: [
+      {
+        files: ['*.vue'],
+        rules: {
+          // 禁用 vue/multi-word-component-names 规则
+          'vue/multi-word-component-names': 'off',
+        },
+      },
+    ],
+  },
 ]

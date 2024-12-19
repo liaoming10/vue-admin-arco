@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import { appRoutes } from './routes'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -15,7 +17,9 @@ const router = createRouter({
         requiresAuth: false,
       },
     },
+    ...appRoutes,
   ],
+  scrollBehavior: () => ({ left: 0, top: 0 }), // 滚动条位置
 })
 
 export default router

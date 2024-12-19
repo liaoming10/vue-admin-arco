@@ -3,6 +3,7 @@
     <div class="left-side">
       <div class="panel">
         <Banner />
+        <DataPanel />
       </div>
     </div>
     <div class="right-side">right side</div>
@@ -11,6 +12,7 @@
 
 <script setup lang="ts">
 import Banner from './components/banner.vue'
+import DataPanel from './components/data-panel.vue'
 </script>
 
 <style scoped>

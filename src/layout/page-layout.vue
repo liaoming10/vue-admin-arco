@@ -1,18 +1,11 @@
 <template>
   <router-view v-slot="{ Component, route }">
-
     <transition name="fade" mode="out-in" appear>
       <component :is="Component" :key="route.fullPath" />
-    </Transition>
+    </transition>
   </router-view>
 </template>
 
-<script setup lang="ts">
-import { onMounted } from 'vue';
-
-onMounted(() => {
-  console.log('page-layout')
-})
-</script>
+<script setup lang="ts"></script>
 
 <style scoped></style>

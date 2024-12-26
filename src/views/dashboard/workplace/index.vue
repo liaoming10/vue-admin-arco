@@ -6,6 +6,14 @@
         <DataPanel />
         <ContentChart />
       </div>
+      <a-grid :cols="24" :row-gap="16" :col-gap="16" style="margin-top: 16px">
+        <a-grid-item :span="{ xs: 24, sm: 24, md: 24, lg: 12, xl: 12, xxl: 12 }">
+          <PopularContent />
+        </a-grid-item>
+        <a-grid-item :span="{ xs: 24, sm: 24, md: 24, lg: 12, xl: 12, xxl: 12 }">
+          <CategoriesPrecent />
+        </a-grid-item>
+      </a-grid>
     </div>
     <div class="right-side">right side</div>
   </div>
@@ -15,6 +23,8 @@
 import Banner from './components/banner.vue'
 import DataPanel from './components/data-panel.vue'
 import ContentChart from './components/content-chart.vue'
+import PopularContent from './components/popular-content.vue'
+import CategoriesPrecent from './components/categories-precent.vue'
 </script>
 
 <style scoped>
@@ -42,4 +52,48 @@ import ContentChart from './components/content-chart.vue'
   margin-bottom: 0;
   border-bottom: 1px solid rgb(var(--gray-2));
 }
+
+.moduler-wrap {
+    border-radius: 4px;
+    background-color: var(--color-bg-2);
+    :deep(.text) {
+      font-size: 12px;
+      text-align: center;
+      color: rgb(var(--gray-8));
+    }
+
+    :deep(.wrapper) {
+      margin-bottom: 8px;
+      text-align: center;
+      cursor: pointer;
+
+      &:last-child {
+        .text {
+          margin-bottom: 0;
+        }
+      }
+      &:hover {
+        .icon {
+          color: rgb(var(--arcoblue-6));
+          background-color: #e8f3ff;
+        }
+        .text {
+          color: rgb(var(--arcoblue-6));
+        }
+      }
+    }
+
+    :deep(.icon) {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin-bottom: 4px;
+      color: rgb(var(--dark-gray-1));
+      line-height: 32px;
+      font-size: 16px;
+      text-align: center;
+      background-color: rgb(var(--gray-1));
+      border-radius: 4px;
+    }
+  }
 </style>

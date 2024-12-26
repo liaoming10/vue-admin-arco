@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { TableData } from '@arco-design/web-vue/es/table/interface'
 
 export interface ContentDataRecord {
   x: string
@@ -8,3 +9,13 @@ export function queryContentData() {
   return axios.get<ContentDataRecord[]>('/api/content-data')
 }
 
+export interface PopularRecord {
+  key: number
+  clickNumber: string
+  title: string
+  increases: number
+}
+
+export function queryPopularList(params: { type: string }) {
+  return axios.get<TableData[]>('/api/popular/list', { params })
+}

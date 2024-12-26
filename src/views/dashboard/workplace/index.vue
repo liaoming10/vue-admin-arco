@@ -4,6 +4,7 @@
       <div class="panel">
         <Banner />
         <DataPanel />
+        <ContentChart />
       </div>
     </div>
     <div class="right-side">right side</div>
@@ -13,6 +14,7 @@
 <script setup lang="ts">
 import Banner from './components/banner.vue'
 import DataPanel from './components/data-panel.vue'
+import ContentChart from './components/content-chart.vue'
 </script>
 
 <style scoped>

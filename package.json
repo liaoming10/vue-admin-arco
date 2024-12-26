@@ -15,14 +15,21 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13",
+    "echarts": "^5.5.1",
+    "mockjs": "^1.1.0",
     "pinia": "^2.2.6",
+    "query-string": "^9.1.1",
     "vue": "^3.5.13",
+    "vue-echarts": "^7.0.3",
     "vue-i18n": "^10.0.5",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.56.3",
     "@tsconfig/node22": "^22.0.0",
+    "@types/mockjs": "^1.0.10",
     "@types/node": "^22.9.3",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vitejs/plugin-vue-jsx": "^4.1.1",

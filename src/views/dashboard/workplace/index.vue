@@ -19,8 +19,18 @@
       <a-grid :row-gap="16" :cols="24">
         <a-grid-item :span="24">
           <div class="panel moduler-wrap">
-            <quickOperation />
+            <QuickOperation />
+            <RecentlyVisited />
           </div>
+        </a-grid-item>
+        <a-grid-item :span="24">
+          <Carousel />
+        </a-grid-item>
+        <a-grid-item :span="24">
+          <Announcement />
+        </a-grid-item>
+        <a-grid-item :span="24">
+          <Doc />
         </a-grid-item>
       </a-grid>
     </div>
@@ -33,7 +43,11 @@ import DataPanel from './components/data-panel.vue'
 import ContentChart from './components/content-chart.vue'
 import PopularContent from './components/popular-content.vue'
 import CategoriesPercent from './components/categories-percent.vue'
-import quickOperation from './components/quick-operation.vue'
+import QuickOperation from './components/quick-operation.vue'
+import RecentlyVisited from './components/recently-visited.vue'
+import Carousel from './components/carousel.vue'
+import Doc from './components/doc.vue'
+import Announcement from './components/announcement.vue'
 </script>
 
 <style scoped>

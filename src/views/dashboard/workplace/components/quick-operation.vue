@@ -13,7 +13,7 @@
         <div class="icon">
           <component :is="link.icon"></component>
         </div>
-        <a-typography class="title"> {{ $t(link.text) }}</a-typography>
+        <a-typography-paragraph class="text"> {{ $t(link.text) }}</a-typography-paragraph>
       </a-col>
     </a-row>
   </a-card>

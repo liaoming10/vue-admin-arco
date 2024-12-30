@@ -11,6 +11,7 @@ import {
 } from 'echarts/components'
 
 import Chart from './chart/index.vue'
+import Breadcrumb from './breadcrumb/index.vue'
 
 use([
   CanvasRenderer,
@@ -28,5 +29,6 @@ use([
 export default {
   install(Vue: App) {
     Vue.component('Chart', Chart)
+    Vue.component('Breadcrumb', Breadcrumb)
   },
 }

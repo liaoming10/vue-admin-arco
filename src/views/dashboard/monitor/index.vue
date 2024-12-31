@@ -6,12 +6,18 @@
         <ChatPanel />
       </div>
       <div class="layout-content">
-        <a-space :size="8" direction="vertical" fill>
-          <Studio/>
-          <StudioStatistic/>
+        <a-space :size="16" direction="vertical" fill>
+          <Studio />
+          <StudioStatistic />
         </a-space>
       </div>
-      <div class="layout-right-side">right</div>
+      <div class="layout-right-side">
+        <a-space :size="16" direction="vertical" fill>
+          <StudioStatus />
+          <QuickOperation />
+          <StudioInformation />
+        </a-space>
+      </div>
     </div>
   </div>
 </template>
@@ -19,7 +25,10 @@
 <script setup lang="ts">
 import ChatPanel from './components/chat-panel.vue'
 import Studio from './components/studio.vue'
-import StudioStatistic from './components/studio-statistic.vue';
+import StudioStatistic from './components/studio-statistic.vue'
+import StudioStatus from './components/studio-status.vue'
+import StudioInformation from './components/studio-information.vue'
+import QuickOperation from './components/quick-operation.vue'
 </script>
 <style lang="less" scoped>
 .container {

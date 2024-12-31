@@ -17,8 +17,18 @@
         }}</a-menu-item>
       </a-sub-menu>
       <a-sub-menu key="1">
-        <template #icon><icon-bug></icon-bug></template>
-        <template #title>Navigation 2</template>
+        <template #icon><icon-apps></icon-apps></template>
+        <template #title>{{ $t('menu.visualization') }}</template>
+        <a-menu-item
+          key="/visualization/data-analysis"
+          @click="goto('/visualization/data-analysis')"
+          >{{ $t('menu.visualization.dataAnalysis') }}</a-menu-item
+        >
+        <a-menu-item
+          key="/visualization/multi-dimension-data-analysis"
+          @click="goto('/visualization/multi-dimension-data-analysis')"
+          >{{ $t('menu.visualization.multiDimensionDataAnalysis') }}</a-menu-item
+        >
       </a-sub-menu>
       <a-sub-menu key="2">
         <template #icon><icon-bulb></icon-bulb></template>

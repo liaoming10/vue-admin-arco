@@ -3,6 +3,9 @@ import localeLogin from '@/views/login/locale/zh-CN'
 import localeWorkplace from '@/views/dashboard/workplace/locale/zh-CN'
 import localeMonitor from '@/views/dashboard/monitor/locale/zh-CN'
 
+import localeDataAnalysis from '@/views/visualization/data-analysis/locale/zh-CN'
+import localeMulptiDAnalysis from "@/views/visualization/multi-dimension-data-analysis/locale/zh-CN";
+
 import localeSettings from './zh-CN/settings'
 export default {
   'menu.dashboard': '仪表盘',
@@ -25,6 +28,9 @@ export default {
 
   ...localeWorkplace,
   ...localeMonitor,
+
+  ...localeDataAnalysis,
+  ...localeMulptiDAnalysis,
 
   ...localeSettings,
 }

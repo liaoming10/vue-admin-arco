@@ -3,6 +3,9 @@ import localeLogin from '@/views/login/locale/en-US'
 import localeWorkplace from '@/views/dashboard/workplace/locale/en-US'
 import localeMonitor from '@/views/dashboard/monitor/locale/en-US'
 
+import localeDataAnalysis from '@/views/visualization/data-analysis/locale/en-US'
+import localeMulptiDAnalysis from "@/views/visualization/multi-dimension-data-analysis/locale/en-US";
+
 import localeSettings from './en-US/settings'
 
 export default {
@@ -27,6 +30,9 @@ export default {
 
   ...localeWorkplace,
   ...localeMonitor,
+
+  ...localeDataAnalysis,
+  ...localeMulptiDAnalysis,
 
   ...localeSettings,
 }

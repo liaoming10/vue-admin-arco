@@ -15,5 +15,7 @@ function formateRoute(_modules: any, result: RouteRecordNormalized[]) {
   return result
 }
 
+console.log(modules, externalModules)
+
 export const appRoutes: RouteRecordNormalized[] = formateRoute(modules, [])
 export const externalRoutes: RouteRecordNormalized[] = formateRoute(externalModules, [])

@@ -7,3 +7,9 @@ export interface GetParams {
   type: string
   url: string
 }
+
+export interface PostData {
+  body: string
+  type: string
+  url: string
+}

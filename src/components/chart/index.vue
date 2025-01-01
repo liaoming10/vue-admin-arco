@@ -11,7 +11,7 @@
 import VCharts from 'vue-echarts'
 import { nextTick, ref } from 'vue'
 
-defineProps({
+const props = defineProps({
   options: {
     type: Object,
     default() {
@@ -36,6 +36,7 @@ const renderChart = ref(false)
 const options = ref({})
 
 nextTick(() => {
+  console.log(props.options)
   renderChart.value = true
 })
 </script>

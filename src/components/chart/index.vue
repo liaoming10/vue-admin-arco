@@ -36,7 +36,6 @@ const renderChart = ref(false)
 const options = ref({})
 
 nextTick(() => {
-  console.log(props.options)
   renderChart.value = true
 })
 </script>

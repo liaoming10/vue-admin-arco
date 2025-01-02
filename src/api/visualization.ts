@@ -1,3 +1,4 @@
+import { Data } from '@arco-design/web-vue/es/_utils/types'
 import axios from 'axios'
 
 export interface ChartDataRecord {
@@ -6,7 +7,7 @@ export interface ChartDataRecord {
   name: string
 }
 
-export interface DataChainGroth {
+export interface DataChainGrowth {
   quota: string
 }
 
@@ -45,4 +46,25 @@ export interface PopularAuthorRes {
 
 export function queryPopularAuthor() {
   return axios.get<PopularAuthorRes>('/api/popular-author/list')
+}
+
+export interface DataOverviewRes {
+  xAxis: string[]
+  data: Array<{ name: string; value: number[]; count: number }>
+}
+export function queryDataOverview() {
+  return axios.get<DataOverviewRes>('/api/data-overview')
+}
+
+export interface DataChainGrowthRes {
+  count: number
+  growth: number
+  chartData: {
+    xAxis: string[]
+    data: { name: string; value: number[] }
+  }
+}
+
+export function queryDataChainGrowth(data: DataChainGrowth) {
+  return axios.post<DataChainGrowthRes>('/api/data-chain-growth', data)
 }

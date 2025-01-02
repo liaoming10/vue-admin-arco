@@ -31,8 +31,16 @@
         >
       </a-sub-menu>
       <a-sub-menu key="2">
-        <template #icon><icon-bulb></icon-bulb></template>
-        <template #title>Navigation 3</template>
+        <template #icon><icon-list></icon-list></template>
+        <template #title>{{ $t('menu.list') }}</template>
+        <a-menu-item key="/list/search-table" @click="goto('/list/search-table')">{{
+          $t('menu.list.searchTable')
+        }}</a-menu-item>
+        <a-menu-item
+          key="/list/card"
+          @click="goto('/list/card')"
+          >{{ $t('menu.list.cardList') }}</a-menu-item
+        >
       </a-sub-menu>
     </a-menu>
   </div>

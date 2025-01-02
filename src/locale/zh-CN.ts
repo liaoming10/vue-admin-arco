@@ -4,7 +4,10 @@ import localeWorkplace from '@/views/dashboard/workplace/locale/zh-CN'
 import localeMonitor from '@/views/dashboard/monitor/locale/zh-CN'
 
 import localeDataAnalysis from '@/views/visualization/data-analysis/locale/zh-CN'
-import localeMulptiDAnalysis from "@/views/visualization/multi-dimension-data-analysis/locale/zh-CN";
+import localeMulptiDAnalysis from '@/views/visualization/multi-dimension-data-analysis/locale/zh-CN'
+
+import localeListCard from '@/views/list/card/locale/zh-CN'
+import localeSearchTable from '@/views/list/search-table/locale/zh-CN'
 
 import localeSettings from './zh-CN/settings'
 export default {
@@ -31,6 +34,9 @@ export default {
 
   ...localeDataAnalysis,
   ...localeMulptiDAnalysis,
+
+  ...localeListCard,
+  ...localeSearchTable,
 
   ...localeSettings,
 }

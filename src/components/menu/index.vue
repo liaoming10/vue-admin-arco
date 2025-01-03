@@ -42,6 +42,18 @@
           >{{ $t('menu.list.cardList') }}</a-menu-item
         >
       </a-sub-menu>
+      <a-sub-menu key="3">
+        <template #icon><icon-settings></icon-settings></template>
+        <template #title>{{ $t('menu.form') }}</template>
+        <a-menu-item key="/form/step" @click="goto('/form/step')">{{
+          $t('menu.form.step')
+        }}</a-menu-item>
+        <a-menu-item
+          key="/form/group"
+          @click="goto('/form/group')"
+          >{{ $t('menu.form.group') }}</a-menu-item
+        >
+      </a-sub-menu>
     </a-menu>
   </div>
 </template>

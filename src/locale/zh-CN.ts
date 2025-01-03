@@ -9,6 +9,9 @@ import localeMulptiDAnalysis from '@/views/visualization/multi-dimension-data-an
 import localeListCard from '@/views/list/card/locale/zh-CN'
 import localeSearchTable from '@/views/list/search-table/locale/zh-CN'
 
+import localeFormGroup from '@/views/form/group/locale/zh-CN'
+import localeFormStep from '@/views/form/step/locale/zh-CN'
+
 import localeSettings from './zh-CN/settings'
 export default {
   'menu.dashboard': '仪表盘',
@@ -37,6 +40,9 @@ export default {
 
   ...localeListCard,
   ...localeSearchTable,
+
+  ...localeFormGroup,
+  ...localeFormStep,
 
   ...localeSettings,
 }

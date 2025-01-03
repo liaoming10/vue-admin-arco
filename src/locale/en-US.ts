@@ -9,6 +9,9 @@ import localeMulptiDAnalysis from '@/views/visualization/multi-dimension-data-an
 import localeCardList from '@/views/list/card/locale/en-US'
 import localeSearchTable from '@/views/list/search-table/locale/en-US'
 
+import localeFormGroup from '@/views/form/group/locale/en-US'
+import localeFormStep from '@/views/form/step/locale/en-US'
+
 import localeSettings from './en-US/settings'
 
 export default {
@@ -38,6 +41,9 @@ export default {
 
   ...localeCardList,
   ...localeSearchTable,
+
+  ...localeFormGroup,
+  ...localeFormStep,
 
   ...localeSettings,
 }

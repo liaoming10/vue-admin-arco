@@ -1,4 +1,3 @@
-import { Data } from '@arco-design/web-vue/es/_utils/types'
 import axios from 'axios'
 
 export interface ChartDataRecord {
